@@ -1,0 +1,153 @@
+body {
+    background: #eeeeee;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+.heading {
+    text-align: center;
+}
+.wrapper {
+    min-width: 30%;
+    max-width: 100%;
+    padding: 20px 10px;
+    scroll-behavior: unset;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #ceccdd;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 8px;
+    background: #a6bad34f;
+}
+button {
+    text-decoration: none;
+    border: none;
+}
+
+.todo-container {
+    margin: 0;
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 100%;
+}
+
+.todo-list-class {
+    min-width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.todo {
+    margin: 5px 5px 5px 5px;
+    display: block;
+    padding: 8px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.todo li {
+    display: inline;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.check-btn, .delete-btn {
+    border-radius: 1px;
+    margin: 0;
+    background: none;
+    cursor: pointer;
+    display: inline;
+    vertical-align: middle;
+    float: right;
+    min-width: 30px;
+    min-height: 25px;
+}
+.checked {
+    opacity: 0.5;
+}
+.fa-remove:before, .fa-close:before, .fa-times:before {
+    content: "\f00d";
+}
+.fa-check:before {
+    content: "\f00c";
+}
+.fa-plus:before {
+    content: "\f067";
+}
+.container-fluid {
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.input-group {
+      margin: 10px 0 30px 0;
+}
+
+.form-control {
+    width: 80%;
+    min-height: 30px;
+    border-color: #eee !important;
+    padding: 5px 5px 5px 15px;
+    line-height: 1em;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #9d2424;
+    /* display: inline; */
+    /* position: relative; */
+    /* top: 0; */
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.05), 1px 1px 3px 1px rgba(208, 213, 219, 0.28);
+}
+
+.input-group-text {
+    padding: 13px;
+    width: 15%;
+    margin: 0;
+    display: inline;
+    background: #7fbcd2;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.05), 1px 1px 3px 1px rgba(208, 213, 219, 0.28);
+    cursor: pointer;
+}
+form.todo-form {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* box-shadow: 0 1px 1px  rgba(9,30,66,0.25), 0 0 20px 0 rgba(138, 169, 62, 0.6); */
+}
+
+button.delete-btn {
+    /* margin: 0 0 0 15px; */
+    /* min-width: 30px; */
+    /* min-height: 25px; */
+    /* padding: 3px 8px; */
+    /* border: 1px solid blue; */
+    /* font-size: 18px; */
+}
+
+button.check-btn {
+    min-width: 20px;
+    min-height: 25px;
+    /* padding: 3px 8px; */
+    margin: 0 10px 0 0;
+    /* border: 1px solid blue; */
+    float: left;
+    font-size: 18px;
+    font-weight: 900;
+    color: green;
+}
+input:focus {
+    background: #ffffff;
+    border:none!important;
+}
+
+.checked li.todo-item {
+    text-decoration: line-through;
+}
